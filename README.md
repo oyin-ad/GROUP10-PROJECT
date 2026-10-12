@@ -1,4 +1,3 @@
-# GROUP10-PROJECT
 GROUP10 HAJIME CAPSTONE PROJECT
 
 PROJECT TITLE: Planet | Solar System Explorer
@@ -14,20 +13,19 @@ It’s Features
 Built with: HTML, CSS, JavaScript (Fetch API), Google Fonts
 
  2. Team Members
-Name | Role | GitHub 
- [Oyinkansola](https://github.com/oyin-ad) | Team Lead | @oyin-ad 
- [David](https://github.com/davidhetech-bot) | Assistant Team Lead | @davidhetech-bot 
- [Ikemba](https://github.com/Iyke62) | Developer | @Iyke62 
- [Esther](https://github.com/lightayomide1-cell) | Developer | @lightayomide1-cell
- [Deborah](https://github.com/QueenBee-prog) | Developer | @QueenBee-prog
- [Chukwuemeka](https://github.com/RichMambella) | Developer | @ RichMambella 
- [Matthew](https://github.com/Matthewchi66) | Developer | @Matthewchi66 
- [Rita](https://github.com/riri-comet) | Developer | @riri-comet 
- [Busola](https://github.com/bussydee) | Developer | @ bussydee 
+ - [Oyinkansola](https://github.com/oyin-ad) | Team Lead | @oyin-ad
+ - [David](https://github.com/davidhetech-bot) | Assistant Team Lead | @davidhetech-bot
+ - [Ikemba](https://github.com/Iyke62) | Developer | @Iyke62
+ - [Esther](https://github.com/lightayomide1-cell) | Developer | @lightayomide1-cell
+ - [Deborah](https://github.com/QueenBee-prog) | Developer | @QueenBee-prog
+ - [Chukwuemeka](https://github.com/RichMambella) | Developer | @ RichMambella
+ - [Matthew](https://github.com/Matthewchi66) | Developer | @Matthewchi66
+ - [Rita](https://github.com/riri-comet) | Developer | @riri-comet
+ - [Busola](https://github.com/bussydee) | Developer | @ bussydee 
 
 3. Components, Functions and Contributors
 Component or functions | Worked on by 
--	Project board and issues, README structure, final testing, resolving blockers, Reviewer rotation, progress tracking, hosting and the live link, README deployment section, Reviews and Merges PRs | OYINKANSOLA 
+- Project board and issues, README structure, final testing, resolving blockers, Reviewer rotation, progress tracking, hosting and the live link, README deployment section, Reviews and Merges PRs | OYINKANSOLA 
 
 -	Basic Html and CSS page set up, Crosschecked semantic usage | RITA
 
