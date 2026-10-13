@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planet Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Search -->
+  <form class="search" id="search-form" role="search">
+    <svg class="search_icon" viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.8"></circle>
+      <path d="M16.5 16.5 21 21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+    </svg>
+
+    <label class="screenreader-only" for="search-input">Search planet name</label>
+    <input class="search_input" id="search-input" type="text"
+      placeholder="Search planet name" autocomplete="off"
+      autocapitalize="off" spellcheck="false">
+
+    <span class="search_error" id="search-error" hidden>No results</span>
+    <button class="btn" type="submit">Search</button>
+  </form>
+
+  <!-- No results card -->
+  <article class="card card_empty" id="not-found-card" hidden>
+    <h2 class="empty_title" id="empty-title">No results found!</h2>
+    <p class="empty_text" id="empty-text">
+      We couldn't find any planet matching your search. Please double-check the name and try again.
+    </p>
+  </article>
+
+  <script src="script.js"></script>
+</body>
+</html>
