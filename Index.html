@@ -1,0 +1,62 @@
+<!-- PLANET CARD (Found) -->
+    <article class="card" id="planet-card" aria-labelledby="planet-name" hidden>
+      <div class="card_image_wrap">
+       <img class="card_image" id="planet-image" width="112" height="112" alt="" />
+      </div>
+      
+      <h2 class="card_title" id="planet-name"></h2>
+      <p class="card_type" id="planet-type"></p>
+      <p class="card_description" id="planet-description"></p>
+
+      <dl class="statistics">
+        <div class="statistics_item">
+          <dt> Gravity </dt>
+          <dd id="planet-gravity"></dd> 
+        </div>
+        <div class="statistics_item">
+          <dt> Mass </dt>
+          <dd id="planet-mass"></dd>
+        </div>
+        <div class="statistics_item">
+          <dt> Period </dt>
+          <dd id="planet-period"></dd>
+        </div>
+      </dl>
+
+      <ul class="meta_data">
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+           <path d="M10 4a2.5 2.5 0 0 0-2.5 2.5v6.6a4.5 4.5 0 1 0 5 0V6.5A2.5 2.5 0 0 0 10 4z" fill="none" stroke="currentColor" stroke-width="2" />
+           <circle cx="10" cy="16.5" r="2" fill="currentColor" />
+           <circle cx="18" cy="5" r="2" fill="none" stroke="currentColor" stroke-width="1.6" />
+          </svg>
+          <span class="screenreader-only"> Temperature: </span>
+          <span id="planet-temperature"></span>
+        </li>
+
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+           <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z" fill="currentColor" /> 
+          </svg>
+          <span id="planet-moons"></span>
+          <span class="screenreader-only"> Moons: </span>
+        </li>
+
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+           <circle cx="12" cy="12" r="10" fill="currentColor" />
+          </svg>
+          <span class="screenreader-only"> Diameter: </span>
+          <span id="planet-diameter"></span>
+        </li>
+
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+           <circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="2" />
+           <path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          <span id="planet-distance"></span>
+          <span class="screenreader-only"> Distance from the sun: </span>
+        </li>
+      </ul>
+    </article>
