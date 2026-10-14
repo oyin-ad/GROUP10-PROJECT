@@ -1,0 +1,117 @@
+/* =========================================================
+   9. DARK MODE 
+   ========================================================= */
+
+/* Page */
+.dark {
+  background-color: #131a2e;
+  color: #f1f4ff;
+}
+
+/* Header */
+.dark .logo {
+  color: #ffffff;
+}
+
+.dark .theme_toggle {
+  color: #8f9acb;
+}
+
+.dark .theme_toggle:hover,
+.dark .theme_toggle:focus-visible {
+  color: #ffffff;
+}
+
+/* Swap the moon icon for the sun icon */
+.dark .moon_icon {
+  display: none;
+}
+.dark .sun_icon {
+  display: block;
+}
+
+/* Search bar */
+.dark .search {
+  background-color: #1e2949;
+  box-shadow: none;
+}
+
+.dark .search:focus-within {
+  box-shadow: 0 0 0 2px #007aff;
+}
+
+.dark .search_input {
+  color: #f1f4ff;
+}
+
+.dark .search_input::placeholder {
+  color: #8f9acb;
+}
+
+/* Planet card and "No results" card */
+.dark .card {
+  background-color: #1e2949;
+  box-shadow: none;
+}
+
+.dark .card_title,
+.dark .empty_title {
+  color: #ffffff;
+}
+
+.dark .card_description,
+.dark .empty_text {
+  color: #8f9acb;
+}
+
+/* Gravity / Mass / Period box: darker than the card */
+.dark .statistics {
+  background-color: #0d1222;
+}
+
+.dark .statistics dt {
+  color: #cbcbcf;
+}
+
+.dark .statistics dd {
+  color: #ffffff;
+}
+
+/* The four icons and their numbers */
+.dark .meta_data {
+  color: #ffffff;
+}
+
+.dark .meta_data svg {
+  color: #ffffff;
+}
+
+/* Intro: heading white, paragraph muted */
+.dark .intro_section h2 {
+  color: #f1f4ff;
+}
+
+.dark .intro_section > p {
+  color: #8f9acb;
+}
+
+/* Table: only the header goes dark; everything else stays light.
+   The text inside the table is already dark, so it isn't changed. */
+.dark .planet_table caption {
+  color: #d2d9f9;
+}
+
+.dark .planet_table thead th {
+  background-color: #131a2e;
+  color: #d2d9f9;
+}
+
+.dark .planet_table tbody th.group {
+  background-color: #93a5da;
+  color: #1c1f33;
+}
+
+/* Footer */
+.dark .footer {
+  color: #d2d9f9;
+}
