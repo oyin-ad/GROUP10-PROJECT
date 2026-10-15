@@ -12,6 +12,7 @@ It’s Features
 - Semantic HTML and accessible labels
 Built with: HTML, CSS, JavaScript (Fetch API), Google Fonts
 
+
  2. Team Members
  - [Oyinkansola](https://github.com/oyin-ad) | Team Lead | @oyin-ad
  - [David](https://github.com/davidhetech-bot) | Assistant Team Lead | @davidhetech-bot
@@ -23,9 +24,10 @@ Built with: HTML, CSS, JavaScript (Fetch API), Google Fonts
  - [Rita](https://github.com/riri-comet) | Developer | @riri-comet
  - [Busola](https://github.com/bussydee) | Developer | @ bussydee 
 
+
 3. Components, Functions and Contributors
 Component or functions | Worked on by 
-- Project board and issues, README structure, final testing, resolving blockers, Reviewer rotation, progress tracking, hosting and the live link, README deployment section, Reviews and Merges PRs | OYINKANSOLA 
+- Project board and issues, README structure, final testing, resolving blockers, Reviewer rotation, progress tracking, hosting and the live link, README deployment section, Reviews and Merges PRs,  Overall codes checking and resolves | OYINKANSOLA 
 
 -	Basic Html and CSS page set up, Crosschecked semantic usage | RITA
 
@@ -35,7 +37,7 @@ Component or functions | Worked on by
 
 -	Card, stats box, icons / CSS section 4 | MATTHEW
 
--	JS sections 1 to 4: fetch, fill the card, errors, checking all 11 fields on all 9 planets and Crosschecked overall JS | DAVID
+-	JS sections 1 to 4: fetch, fill the card, errors, checking all 11 fields on all 9 planets and Crosschecked overall JS, assisted team member on how to use GitHub| DAVID
 
 -	Intro and table / CSS sections 6 and 7 | BUSOLA
 
@@ -43,6 +45,7 @@ Component or functions | Worked on by
 
 -	CSS section 9 (all dark colours), plus a semantic HTML and accessibility check | CHUKWUEMEKA
 Group work (whole team): project planning, task board, code reviews through pull requests, testing on phone and desktop, and final bug fixes.
+
 
 4. Run the Project Locally
 Option A: download the files
@@ -65,6 +68,7 @@ Project structure
 -	 capstone1.js
 -	README.md
 -	```
+
 
  5. Live Deployment
 Live site: ADD YOUR LINK HERE (will be updated after deployment)
