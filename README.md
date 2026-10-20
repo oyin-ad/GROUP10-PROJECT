@@ -2,6 +2,7 @@ GROUP10 HAJIME CAPSTONE PROJECT
 
 PROJECT TITLE: Planet | Solar System Explorer
  1. Project Summary
+    
 Planet is a responsive web application that lets users search for any planet in our solar system and view its key facts. It is the capstone project of the Hajime cohort at TSAcademy, built by Group 10 with HTML, CSS and JavaScript.
 The app uses the Fetch API to load planet information from a provided API, and shows each planet's name, image, type, description, gravity, mass, orbital period, temperature, moons, diameter and distance from the Sun. A comparison table shows data for all the planets.
 
