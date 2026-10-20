@@ -66,7 +66,7 @@ Option B: Run the Project Using Visual Studio Code
 - Install Visual Studio Code if it is not already installed.
 - Install Git if you intend to clone the repository.
 - Open Visual Studio Code and choose Clone Git Repository, or open a terminal and run:
-- git clone https://github.com/oyin-ad/GROUP10-PROJECT.git
+- git clone https://github.com/oyin-ad/GROUP10-PROJECT
 - Open the cloned GROUP10-PROJECT folder in Visual Studio Code.
 - Find index.html in the file explorer.
 - If you have the Live Server extension installed, right-click index.html and select Open with Live Server.
