@@ -59,10 +59,10 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: none;
-  border: none;
-  border-radius: 6px;
-  padding: 6px;
+  background-color: #ffffff;
+  border: 1px solid #d5dcf3;
+  border-radius: 999px;
+  padding: 8px 16px;
   color: #6f7cab;
   font-family: "Space Mono", monospace;
   font-size: 12px;
@@ -76,6 +76,7 @@ body {
 .theme_toggle:hover,
 .theme_toggle:focus-visible {
   color: #1c1f33;
+  border-color: #007aff;
 }
 
 .moon_icon,
@@ -200,6 +201,7 @@ body {
 
 /* The round window that clips the planet picture */
 .card_image_wrap {
+  margin: 0;
   width: 112px;
   height: 112px;
   border-radius: 50%;
@@ -371,6 +373,8 @@ body {
   padding: 18px 12px;
 }
 
+
+
 /* Column widths: the category columns share 35%, then Name, Mass, Diameter */
 .planet_table thead th:first-child {
   width: 35%;
@@ -468,12 +472,15 @@ body {
 }
 
 .dark .theme_toggle {
+  background-color: #1e2949;
+  border-color: #34406b;
   color: #8f9acb;
 }
 
 .dark .theme_toggle:hover,
 .dark .theme_toggle:focus-visible {
   color: #ffffff;
+  border-color: #007aff;
 }
 
 /* Swap the moon icon for the sun icon */
@@ -634,11 +641,13 @@ body {
     padding: 24px;
     margin-bottom: 32px;
   }
-
-  .card_image_wrap {
-    width: 70px;
-    height: 70px;
-  }
+ .card_image_wrap {
+   margin: 0;
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   overflow: hidden;
+ }
 
   .card_title {
     align-self: end;
@@ -723,4 +732,4 @@ body {
     gap: 24px;
     margin-top: 36px;
   }
-    }
+}
