@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Search the planets of our solar system and compare their key facts."/>
-  <title> CAPSTONE PROJECT </title>
+  <title> Planet | Group 10 Capstone </title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
@@ -47,7 +47,7 @@
         </svg>
         
         <label class="screenreader-only" for="search-input"> Search planet name </label>
-        <input class="search_input" id="search-input" type="text" placeholder="Search planet name" autocomplete="off" autocapitalize="off" spellcheck="false" />
+        <input class="search_input" id="search-input" name="planet" type="search" placeholder="Search planet name" autocomplete="off" autocapitalize="off" spellcheck="false" />
         
         <span class="search_error" id="search-error" hidden> No results </span>
         
@@ -56,9 +56,10 @@
 
     <!-- PLANET CARD (Found) -->
     <article class="card" id="planet-card" aria-labelledby="planet-name" hidden>
-      <div class="card_image_wrap">
+     <figure class="card_image_wrap">
        <img class="card_image" id="planet-image" width="112" height="112" alt="" />
-      </div>
+       <figcaption class="screenreader-only" id="planet-caption"></figcaption>
+    </figure>
       
       <h2 class="card_title" id="planet-name"></h2>
       <p class="card_type" id="planet-type"></p>
@@ -126,83 +127,84 @@
     </article>
 
     <!-- Intro + table (hidden when there are no results) -->
-    <section class="intro_section" id="facts" aria-labelledby="facts-title">
+    <section class="intro_section" id="facts" aria-labelledby="facts-title" hidden>
       <h2 id="facts-title"> Planetary Facts at a Glance </h2>
       <p> Below is a comparative table of major planets in our solar system. The data highlights
         key physical properties used by astronomers and researchers worldwide. </p>
         
    <div class="table_wrap">
     <table class="planet_table">
-      <caption> Data about the planets of our solar system (Planetary facts taken from NASA)</span> </caption>
+      <caption> Data about the planets of our solar system (Planetary facts taken from NASA) </caption>
+       <colgroup>
+        <col class="col_group" span="2">
+        <col class="col_name">
+        <col class="col_mass">
+        <col class="col_diameter">
+      </colgroup>
           <thead>
            <tr>
              <th colspan="2" scope="col"><span class="screenreader-only"> Planet group </span></th>
             <th scope="col"> Name </th>
-            <th scope="col" class="col_mass"> Mass (10 24kg) </th> 
+            <th scope="col" class="col_mass">Mass (10<sup>24</sup> kg)</th>
             <th scope="col"> Diameter (km) </th>
            </tr>
           </thead>
           
           <tbody>
-            <tr>
-              <th class="group" scope="row" rowspan="4" colspan="2"> Terrestrial Planets </th>
-              <td> Mercury </td>
-              <td class="col_mass"> 0.330 </td>
-              <td> 4,878 </td>
-            </tr>
+          <tr data-planet="Mercury">
+           <th class="group" scope="row" rowspan="4" colspan="2">Terrestrial Planets</th>
+            <td>Mercury</td>
+            <td class="col_mass" data-field="mass">–</td>
+            <td data-field="diameter">–</td>
+          </tr>
+          <tr data-planet="Venus">
+           <td>Venus</td>
+           <td class="col_mass" data-field="mass">–</td>
+           <td data-field="diameter">–</td>
+          </tr>
+          <tr data-planet="Earth">
+           <td>Earth</td>
+           <td class="col_mass" data-field="mass">–</td>
+           <td data-field="diameter">–</td>
+          </tr>
+         <tr data-planet="Mars">
+          <td>Mars</td>
+          <td class="col_mass" data-field="mass">–</td>
+          <td data-field="diameter">–</td>
+         </tr>
+  
+        <tr data-planet="Jupiter">
+         <th class="group" scope="row" rowspan="4">Jovian Planets</th>
+         <th class="group" scope="row" rowspan="2">Gas Giants</th>
+          <td>Jupiter</td>
+          <td class="col_mass" data-field="mass">–</td>
+          <td data-field="diameter">–</td>
+        </tr>
+        <tr data-planet="Saturn">
+         <td>Saturn</td>
+         <td class="col_mass" data-field="mass">–</td>
+         <td data-field="diameter">–</td>
+        </tr>
+        <tr data-planet="Uranus">
+         <th class="group" scope="row" rowspan="2">Ice Giants</th>
+         <td>Uranus</td>
+         <td class="col_mass" data-field="mass">–</td>
+         <td data-field="diameter">–</td>
+        </tr>
+        <tr data-planet="Neptune">
+         <td>Neptune</td>
+         <td class="col_mass" data-field="mass">–</td>
+         <td data-field="diameter">–</td>
+        </tr>
+  
+        <tr data-planet="Pluto">
+         <th class="group" scope="row" colspan="2">Dwarf Planets</th>
+         <td>Pluto</td>
+         <td class="col_mass" data-field="mass">–</td>
+         <td data-field="diameter">–</td>
+        </tr>
+      </tbody>
 
-            <tr>
-              <td> Venus </td>
-              <td class="col_mass"> 0.330 </td>
-              <td> 4,878 </td>
-            </tr>
-
-            <tr>
-              <td> Earth </td>
-              <td class="col_mass"> 0.330 </td>
-              <td> 4,878 </td>
-            </tr>
-
-            <tr>
-              <td> Mars </td>
-              <td class="col_mass"> 0.330 </td>
-              <td> 4,878 </td>
-            </tr>
-
-            <tr>
-              <th class="group" scope="row" rowspan="4"> Jovian Planets </th>
-              <th class="group" scope="row" rowspan="2"> Gas Giants </th>
-              <td> Jupiter </td>
-              <td class="col_mass"> 0.330 </td>
-              <td> 4,878 </td>
-            </tr>
-
-            <tr>
-              <td> Saturn </td>
-              <td class="col_mass"> 0.330 </td>
-              <td> 4,878 </td>
-            </tr>
-
-            <tr>
-              <th class="group" scope="row" rowspan="2"> Ice Giants </th>
-              <td> Uranus </td>
-              <td class="col_mass"> 0.330 </td>
-              <td> 4,878 </td>
-            </tr>
-
-             <tr>
-              <td> Neptune </td>
-              <td class="col_mass"> 0.330 </td>
-              <td> 4,878 </td>
-            </tr>
-
-             <tr>
-              <th class="group" scope="row" colspan="2"> Dwarf Planets </th>
-              <td> Pluto </td>
-              <td class="col_mass"> 0.330 </td>
-              <td> 4,878 </td>
-            </tr>
-          </tbody>
         </table>
       </div>
     </section>
@@ -211,15 +213,15 @@
     <footer class="footer">
       <div class="footer_about">
         <h3> About </h3>
-        <p> Oyinkansola </p>
-        <p> David </p>
-        <p> Ikemba </p>
-        <p> Esther </p>
-        <p> Busola </p>
-        <p> Deborah </p>
-        <p> Chukwuemeka </p>
-        <p> Matthew </p>
-        <p> Rita </p>
+        <p><a href="https://github.com/oyin-ad" target="_blank" rel="noopener noreferrer"> Oyinkansola </a></p>
+        <p><a href="https://github.com/davidhetech-bot" target="_blank" rel="noopener noreferrer"> David </a></p>
+        <p><a href="https://github.com/Iyke62" target="_blank" rel="noopener noreferrer"> Ikemba </a></p>
+        <p><a href="https://github.com/lightayomide1-cell" target="_blank" rel="noopener noreferrer"> Esther </a></p>
+        <p><a href="https://github.com/bussydee" target="_blank" rel="noopener noreferrer"> Busola </a></p>
+        <p><a href="https://github.com/QueenBee-prog" target="_blank" rel="noopener noreferrer"> Deborah </a></p>
+        <p><a href="https://github.com/RichMambella" target="_blank" rel="noopener noreferrer"> Chukwuemeka </a></p>
+        <p><a href="https://github.com/Matthewchi66" target="_blank" rel="noopener noreferrer"> Matthew </a></p>
+        <p><a href="https://github.com/riri-comet" target="_blank" rel="noopener noreferrer"> Rita </a></p>
       </div>
  
       <div class="footer_credit">
@@ -227,7 +229,7 @@
           <a href="http://amakandukwu.com"target="_blank" rel="noopener noreferrer">Amaka N </a>
           </p>
           <p>Built by 
-            <a href="https://github.com/oyin-ad/GROUP10-PROJECT" target="_blank" rel="noopener noreferrer"> Group10 </a>. All Rights reserved
+            <a href="https://github.com/oyin-ad/GROUP10-PROJECT" target="_blank" rel="noopener noreferrer"> Group 10. </a> All rights reserved
           </p>
         <a href="http://tsacademyonline.com" target="_blank" rel="noopener noreferrer"> TSAcademy </a> 
         </div>
