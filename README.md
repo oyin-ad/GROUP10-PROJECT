@@ -7,7 +7,7 @@ Planet is a responsive web application that lets users search for any planet in 
 The app uses the Fetch API to load planet information from a provided API, and shows each planet's name, image, type, description, gravity, mass, orbital period, temperature, moons, diameter and distance from the Sun. A comparison table shows data for all the planets.
 
 It’s Features
-- Search by planet name (full or partial, any capitalisation)
+- Search by planet name.
 - "No results found!" state when a search does not match a planet
 - Light and dark mode, with the choice remembered between visits
 - Responsive layout for desktop, tablet and mobile
@@ -45,7 +45,7 @@ Component, functions | Worked on by
 
 -	Footer and responsiveness: Implemented the website footer and CSS sections 8, 10 and 11, including responsive styling for tablet and mobile screens. | IKEMBA
 
--	Footer and responsiveness: Implemented the website footer and CSS sections 8, 10 and 11, including responsive styling for tablet and mobile screens. | CHUKWUEMEKA
+-	Dark mode and accessibility: Implemented CSS section 9, covering dark-mode colours, and contributed to semantic HTML, accessibility checks, group code reviews, mobile and desktop testing, and final bug fixes. | CHUKWUEMEKA
 
 - Collaborative project delivery: project planning, task board, code reviews through pull requests, testing on phone and desktop, and final bug fixes.
 
